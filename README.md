@@ -10,7 +10,7 @@ EKSA headphones come with a companion app to tweak the sound output. This compan
 - Press `Win+R` on your keyboard and type: `shell:startup`.
 - In your Startup folder, paste `RunClose.vbs` as a shortcut.
 
-The script will now run at startup, checking every half a second for `ToneTuningTool.exe` running. It will then close it after a 2-second delay (to ensure the foreground app has fully opened/the splash screen has finished). It will then close the foreground app, leaving the background process intact.
+The script will now run at startup, checking every half a second for `ToneTuningTool.exe` running. Once detected, it will wait for 2-seconds (to ensure the foreground app has fully opened/the splash screen has finished). It will then close the foreground app, leaving the background process intact, the script will then end itself (leaving you able to manually launch the foreground app as and when required).
 
 **Bonus Tip:**
 Click the little cog beside the notification `ToneTuningTool` sends to your notification center and turn off all notifications for the program.
